@@ -171,7 +171,7 @@ transporter.sendMail(mailOptions, function (error, info) {
 
 
 for(let i=0;i<ab.length;i++){
-    cron.schedule('* * * * *', () => {
+    cron.schedule('0 */6 * * *', () => {
         ab[i]['name']=resName[i]
         ab[i]['email']=resEmail[i]
         ab[i]['range']=resRange[i]
